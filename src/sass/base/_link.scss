@@ -1,0 +1,16 @@
+.link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+  color: var(--white-color);
+  transition: color $anim-duration $anim-timing-function;
+
+  &:hover,
+  &:focus {
+    color: var(--red-pink-color);
+  }
+}
