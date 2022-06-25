@@ -1,7 +1,7 @@
 .mobile-menu {
     // display: none;
 
-    background-color: #E17992;
+    background-color: var(--dark-pink-color);
 
     width: 250px;
     height: 100vh;
@@ -13,12 +13,12 @@
     /* display: flex;
   justify-content: center; */
 
-    background: linear-gradient(180deg, #E17992, #E17992 123px, #E18298 123px, #E18298 124px,
-            #E17992 124px, #E17992 167px, #E18298 167px, #E18298 168px,
-            #E17992 168px, #E17992 210px, #E18298 210px, #E18298 211px,
-            #E17992 211px, #E17992 253px, #E18298 253px, #E18298 254px,
-            #E17992 254px, #E17992 296px, #E18298 296px, #E18298 297px,
-            #E17992 297px, #E17992 339px, #E18298 339px, #E18298 340px, #E17992 340px);
+    background: linear-gradient(180deg, var(--dark-pink-color), var(--dark-pink-color) 123px, var(--secondary-dark-pink-color) 123px, var(--secondary-dark-pink-color) 124px,
+            var(--dark-pink-color) 124px, var(--dark-pink-color) 167px, var(--secondary-dark-pink-color) 167px, var(--secondary-dark-pink-color) 168px,
+            var(--dark-pink-color) 168px, var(--dark-pink-color) 210px, var(--secondary-dark-pink-color) 210px, var(--secondary-dark-pink-color) 211px,
+            var(--dark-pink-color) 211px, var(--dark-pink-color) 253px, var(--secondary-dark-pink-color) 253px, var(--secondary-dark-pink-color) 254px,
+            var(--dark-pink-color) 254px, var(--dark-pink-color) 296px, var(--secondary-dark-pink-color) 296px, var(--secondary-dark-pink-color) 297px,
+            var(--dark-pink-color) 297px, var(--dark-pink-color) 339px, var(--secondary-dark-pink-color) 339px, var(--secondary-dark-pink-color) 340px, var(--dark-pink-color) 340px);
 
     position: fixed;
     top: 0;
@@ -75,9 +75,9 @@
 .btn-text {
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 1.31;
 
-    color: #D41443;
+    color: var(--red-pink-color);
 
     margin-right: 27px;
 
@@ -105,11 +105,11 @@
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
 
     color: #FFFFFF;
 }
 
 .current {
-    color: #D41443;
+    color: var(--red-pink-color);
 }
