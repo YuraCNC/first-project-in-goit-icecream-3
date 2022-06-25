@@ -6,14 +6,29 @@
             <span class="hero-text">passion</span>
         </h1>
         <ul class="hero-list list">
-            <li class="hero-item"><a href="" class="link  hero-btn hero-btn--darck">Products</a></li>
+            <li class="hero-item"><a href="#products" class="link  hero-btn hero-btn--dark">Products</a></li>
             <li class="hero-item">
-                <!-- <button type="button" class="hero-btn hero-btn--white">How it’s made?</button> -->
 
-                <a href="" class="link hero-btn  hero-btn--white">How it’s made?</a>
+
+                <a href="#about" class="link hero-btn  hero-btn--white">How it’s made?</a>
             </li>
         </ul>
-        <img src="./images/hero/ice-cream.png" alt="мороженко" class="hero-image">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="
+                                ./images/hero/icecream_lg.png 1x,
+                                ./images/hero/icecream_lg@2x.png 2x
+                              " type="image/jpg" />
+            <source media="(min-width: 768px)" srcset="
+                                ./images/hero/icecream_md.png 1x,
+                                ./images/hero/icecream_md@2x.png 2x
+                              " type="image/jpg" />
+            <source media="(max-width: 767px)" srcset="
+                              ./images/hero/icecream_sm.png 1x,
+                              ./images/hero/icecream_sm@2x.png 2x
+                            " type="image/jpg" />
+            <img class="hero-image" src="./images/hero/icecream_sm.png" alt="icecream" width="171" height="410" />
+        </picture>
+
         <div class="elipce"></div>
 
     </div>
