@@ -1,0 +1,81 @@
+.about {
+  background-color: var(--light-pink-color);
+
+  padding-bottom: 40px;
+
+  position: relative;
+}
+
+.about__label {
+  margin-bottom: 15px;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--pink-color);
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--red-pink-color);
+}
+
+.about__img--cow {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.about__description {
+  line-height: 1.58;
+  max-width: 250px;
+
+  // margin-bottom: 40px;
+  color: var(--black-color);
+}
+
+.about__img--milk {
+  position: absolute;
+  top: 594;
+  left: 20;
+
+  width: 100%;
+}
+
+.about__text {
+  line-height: 1.58;
+  max-width: 230px;
+
+  margin-bottom: 20px;
+
+  color: var(--grey-color);
+}
+
+.about__text--last-paragraph {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.wrapper {
+  background-image: url('../images/about/wave-milk_sm.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  padding-top: 71px;
+
+  // position: relative;
+}
