@@ -1,2 +1,23 @@
 @import './common';
+<<<<<<< Updated upstream
 @import './example';
+=======
+
+// Utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// Base
+@import './base/body';
+@import './base/reset';
+@import './base/section';
+@import './base/container';
+@import './base/link';
+
+// Compontents
+@import './components/mobile-menu';
+
+// Customer Reviews
+
+@import './components/customer-reviews';
+>>>>>>> Stashed changes
