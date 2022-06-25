@@ -1,6 +1,4 @@
 @import './common';
-@import './products';
-// @import './example';
 
 // Utils
 @import './utils/variables';
@@ -14,3 +12,5 @@
 @import './base/link';
 
 // Compontents
+@import './components/about';
+@import './components/customer-reviews';
