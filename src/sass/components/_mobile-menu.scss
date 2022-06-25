@@ -1,0 +1,115 @@
+.mobile-menu {
+    // display: none;
+
+    background-color: #E17992;
+
+    width: 250px;
+    height: 100vh;
+
+    padding-top: 60px;
+
+    position: relative;
+
+    /* display: flex;
+  justify-content: center; */
+
+    background: linear-gradient(180deg, #E17992, #E17992 123px, #E18298 123px, #E18298 124px,
+            #E17992 124px, #E17992 167px, #E18298 167px, #E18298 168px,
+            #E17992 168px, #E17992 210px, #E18298 210px, #E18298 211px,
+            #E17992 211px, #E17992 253px, #E18298 253px, #E18298 254px,
+            #E17992 254px, #E17992 296px, #E18298 296px, #E18298 297px,
+            #E17992 297px, #E17992 339px, #E18298 339px, #E18298 340px, #E17992 340px);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    transform: translateX(100%);
+
+    transition: transform var(--transition);
+
+    &.is-open {
+        transform: translateX(0);
+      
+    }
+}
+
+.mobile-menu__close-btn {
+    border: none;
+    background-color: transparent;
+
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    top: 0;
+    right: 0;
+
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+.mobile-menu__buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    background: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+
+    width: 209px;
+    height: 44px;
+
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #D41443;
+
+    margin-right: 27px;
+
+}
+
+/* .btn-text::after {
+  content: '';
+  width: 8px;
+  height: 10px;
+  background-size: contain;
+  background-image: url('/imeges/svg/product-arrow-right.svg');
+} */
+
+.mobile-menu__list {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.mobile-menu__link {
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.current {
+    color: #D41443;
+}
