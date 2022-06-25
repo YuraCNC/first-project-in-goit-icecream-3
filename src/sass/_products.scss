@@ -1,0 +1,35 @@
+.products {
+  &-label {
+    font-size: 18px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #ffa5ba;
+  }
+  &-title {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  &-block {
+  }
+  &-description {
+  }
+  &-subtitle {
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &-text {
+  }
+}
+.description {
+  &-front {
+  }
+  &-back_ {
+  }
+}
