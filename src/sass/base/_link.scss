@@ -7,7 +7,7 @@
 
   text-decoration: none;
   color: var(--white-color);
-  transition: color $anim-duration $anim-timing-function;
+  transition: color var(--anim-duration) var(--anim-timing-function);
 
   &:hover,
   &:focus {
