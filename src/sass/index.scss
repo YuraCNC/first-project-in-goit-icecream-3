@@ -3,6 +3,7 @@
 // Utils
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixin';
 
 // Base
 @import './base/body';
@@ -17,3 +18,4 @@
 @import './components/about';
 @import './components/customer-reviews';
 @import './components/footer';
+@import './components/button';
