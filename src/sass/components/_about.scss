@@ -1,0 +1,118 @@
+.about {
+  background-color: var(--light-pink-color);
+
+  padding-bottom: 40px;
+
+  position: relative;
+}
+
+.about__label {
+  margin-bottom: 15px;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--pink-color);
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--red-pink-color);
+}
+
+.about__img-wrapper {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.about__text-last-paragraph {
+  display: inline-block;
+  margin-top: 12px;
+}
+.about__text-wrapper {
+  background-image: url('../images/about/wave-milk_sm.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 71px;
+}
+
+.about__description {
+  padding-right: 45px;
+  margin-bottom: 25px;
+
+  line-height: 1.6;
+
+  color: var(--black-color);
+}
+
+.about__text {
+  margin-bottom: 20px;
+  padding-right: 60px;
+
+  line-height: 1.6;
+
+  color: var(--grey-color);
+}
+
+.about-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-red-pink-color);
+    cursor: pointer;
+  }
+
+  &:hover .about-btn__text,
+  &:focus .about-btn__text {
+    color: var(--white-color);
+  }
+
+  &:hover .about-btn__icon,
+  &:focus .about-btn__icon {
+    fill: var(--white-color);
+  }
+}
+
+.about-btn__icon {
+  fill: var(--red-pink-color);
+}
+
+.about-btn__text {
+  margin-right: 14px;
+  padding: 5px 5px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--red-pink-color);
+}
