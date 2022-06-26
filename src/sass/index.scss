@@ -3,6 +3,7 @@
 // Utils
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixin';
 
 // Base
 @import './base/body';
@@ -13,6 +14,10 @@
 
 // Compontents
 @import './components/hero';
+@import './components/header';
+@import './components/products';
 @import './components/about';
+@import './components/advantages';
+@import './components/gallery';
 @import './components/customer-reviews';
 @import './components/footer';

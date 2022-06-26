@@ -1,0 +1,28 @@
+.container-header {
+    background-color: transparent;
+
+    padding-top: 8px;
+
+    position: fixed;
+
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.site-nav__btn {
+    border: none;
+    background: none;
+    padding: 0;
+}
