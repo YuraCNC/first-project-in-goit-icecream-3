@@ -1,5 +1,15 @@
+.products .container {
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .products {
-  &-label {
+  &__label {
     font-size: 18px;
     line-height: 1.6;
     text-transform: uppercase;
@@ -15,7 +25,7 @@
       line-height: 1.13;
     }
   }
-  &-title {
+  &__title {
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -69,8 +79,18 @@
       margin-top: 281px;
     }
   }
-
-  &-description {
+}
+.products-block {
+  &__picture {
+    position: absolute;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      top: -140px;
+    }
+    @media screen and (min-width: 1200px) {
+      bottom: 402px;
+    }
+  }
+  &__content {
     padding-top: 140px;
     padding-left: 41px;
     padding-right: 39px;
@@ -85,7 +105,9 @@
       padding-top: 128px;
     }
   }
-  &-subtitle {
+}
+.content {
+  &__subtitle {
     font-family: var(--secondary-font);
     font-size: 20px;
     line-height: 1.15;
@@ -113,32 +135,6 @@
       line-height: 1.13;
     }
   }
-  &-text {
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: var(--white-color);
-    @media screen and (min-width: 768px) {
-      line-height: 1.8;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-  }
-  &-picture {
-    position: absolute;
-    @media screen and (min-width: 320px) and (max-width: 1199px) {
-      top: -140px;
-    }
-    @media screen and (min-width: 1200px) {
-      bottom: 402px;
-    }
-  }
   &-button {
     display: flex;
     margin: 32px auto 40px;
@@ -155,48 +151,54 @@
       margin: 60px auto;
     }
   }
-  &-icon {
+}
+.content-description {
+  &__text {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--white-color);
+    @media screen and (min-width: 768px) {
+      line-height: 1.8;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    &__span {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+.content__text {
+  &--back {
+    display: none;
+  }
+}
+.content-option .content__text--back {
+  display: flex;
+}
+.content-option .content__text--front {
+  display: none;
+}
+.content-button {
+  &__icon {
     width: 15px;
     height: 15px;
     margin: 0 auto;
   }
-  &-span {
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
 }
-.description {
-  &-front {
-  }
-  &-back {
-  }
-}
-.description-back {
-  display: none;
-}
-.description-option .description-back {
-  display: flex;
-}
-.description-option .description-front {
-  display: none;
-}
+
 .rotate {
   transform: rotate(180deg);
 }
-.products-button.rotate .description {
-  background-color: violet;
-}
-.products .container {
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
+
 // .card {
 //   position: relative;
 //   width: 300px;
