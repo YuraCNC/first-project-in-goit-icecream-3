@@ -13,22 +13,12 @@
         height="279"
       />
     </picture>
-    <div class="wrapper">
+    <div class="about__text--wrapper">
       <p class="about__description">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
         cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
         justo fringilla.
       </p>
-
-      <!-- <picture class="about__img--milk">
-        <source
-          srcset="
-            ./images/about/wave-milk_sm.png    1x,
-            ./images/about/wave-milk_sm@2x.png 2x
-          "
-        />
-        <img src="./images/about/wave-milk_sm.png" alt="Молоко" />
-      </picture> -->
 
       <p class="about__text">
         Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
@@ -39,6 +29,14 @@
         >
       </p>
     </div>
-    <button type="button">Read more</button>
+    <button class="about__btn" type="button">
+      <span class="about__btn--text">Read more</span>
+      <svg class="about__btn--icon" width="8" height="10">
+        <use
+          class=""
+          href="./images/icon/icon-sprite.svg#icon-right-arrow"
+        ></use>
+      </svg>
+    </button>
   </div>
 </section>

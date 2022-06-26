@@ -40,14 +40,6 @@
   margin-bottom: 40px;
 }
 
-.about__description {
-  line-height: 1.58;
-  max-width: 250px;
-
-  // margin-bottom: 40px;
-  color: var(--black-color);
-}
-
 .about__img--milk {
   position: absolute;
   top: 594;
@@ -56,26 +48,74 @@
   width: 100%;
 }
 
-.about__text {
-  line-height: 1.58;
-  max-width: 230px;
-
-  margin-bottom: 20px;
-
-  color: var(--grey-color);
-}
-
 .about__text--last-paragraph {
   display: inline-block;
   margin-top: 12px;
 }
-
-.wrapper {
+.about__text--wrapper {
   background-image: url('../images/about/wave-milk_sm.png');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-y: 71px;
+}
 
-  padding-top: 71px;
+.about__description {
+  padding-right: 45px;
+  margin-bottom: 25px;
 
-  // position: relative;
+  line-height: 1.6;
+
+  color: var(--black-color);
+}
+
+.about__text {
+  margin-bottom: 20px;
+  padding-right: 60px;
+
+  line-height: 1.6;
+
+  color: var(--grey-color);
+}
+
+.about__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-red-pink-color);
+  }
+
+  &:hover .about__btn--text,
+  &:focus .about__btn--text {
+    color: var(--white-color);
+  }
+
+  &:hover .about__btn--icon,
+  &:focus .about__btn--icon {
+    fill: var(--white-color);
+  }
+}
+
+.about__btn--text {
+  margin-right: 14px;
+  padding: 5px 5px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--red-pink-color);
 }
