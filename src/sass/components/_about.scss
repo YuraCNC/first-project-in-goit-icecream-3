@@ -35,24 +35,16 @@
   color: var(--red-pink-color);
 }
 
-.about__img--cow {
+.about__img-wrapper {
   display: inline-block;
   margin-bottom: 40px;
 }
 
-.about__img--milk {
-  position: absolute;
-  top: 594;
-  left: 20;
-
-  width: 100%;
-}
-
-.about__text--last-paragraph {
+.about__text-last-paragraph {
   display: inline-block;
   margin-top: 12px;
 }
-.about__text--wrapper {
+.about__text-wrapper {
   background-image: url('../images/about/wave-milk_sm.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -77,7 +69,7 @@
   color: var(--grey-color);
 }
 
-.about__btn {
+.about-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,20 +84,25 @@
   &:hover,
   &:focus {
     background-color: var(--secondary-red-pink-color);
+    cursor: pointer;
   }
 
-  &:hover .about__btn--text,
-  &:focus .about__btn--text {
+  &:hover .about-btn__text,
+  &:focus .about-btn__text {
     color: var(--white-color);
   }
 
-  &:hover .about__btn--icon,
-  &:focus .about__btn--icon {
+  &:hover .about-btn__icon,
+  &:focus .about-btn__icon {
     fill: var(--white-color);
   }
 }
 
-.about__btn--text {
+.about-btn__icon {
+  fill: var(--red-pink-color);
+}
+
+.about-btn__text {
   margin-right: 14px;
   padding: 5px 5px;
 
