@@ -46,6 +46,29 @@
   margin-right: 28px;
 }
 
+.footer-social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background-color: var(--icon-pink-color);
+  color: var(--white-color);
+  transition: background-color var(--anim-duration) var(--anim-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--red-pink-color);
+    color: var(--white-color);
+  }
+}
+
+.footer-social-list__icon {
+  fill: currentColor;
+}
+
 .footer__contacts-text {
   font-weight: 700;
   font-size: 12px;
