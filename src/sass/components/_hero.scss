@@ -1,7 +1,7 @@
-.container {
-  padding-top: 0;
-  padding-bottom: 0;
-
+.hero {
+  background-color: var(--secondary-pink-color);
+}
+.hero-position {
   position: relative;
   z-index: 3;
   overflow: hidden;
