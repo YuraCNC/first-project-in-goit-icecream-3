@@ -1,34 +1,71 @@
 <!-- hero -->
 <section class="hero">
     <div class="container">
-        <h1 class="hero-title">ice cream
-            made with
-            <span class="hero-text">passion</span>
-        </h1>
-        <ul class="hero-list list">
-            <li class="hero-item"><a href="#products" class="link  hero-btn hero-btn--dark">Products</a></li>
-            <li class="hero-item">
-
-
-                <a href="#about" class="link hero-btn  hero-btn--white">How it’s made?</a>
-            </li>
-        </ul>
         <picture>
             <source media="(min-width: 1200px)" srcset="
-                                ./images/hero/icecream_lg.png 1x,
-                                ./images/hero/icecream_lg@2x.png 2x
-                              " type="image/png" />
+                                        ./images/hero/icecream_lg.png 1x,
+                                        ./images/hero/icecream_lg@2x.png 2x
+                                        " type="image/png" />
             <source media="(min-width: 768px)" srcset="
-                                ./images/hero/icecream_md.png 1x,
-                                ./images/hero/icecream_md@2x.png 2x
-                              " type="image/png" />
+                                         ./images/hero/icecream_md.png 1x,
+                                        ./images/hero/icecream_md@2x.png 2x
+                                        " type="image/png" />
             <source media="(max-width: 767px)" srcset="
-                              ./images/hero/icecream_sm.png 1x,
-                              ./images/hero/icecream_sm@2x.png 2x
-                            " type="image/png" />
+                                        ./images/hero/icecream_sm.png 1x,
+                                        ./images/hero/icecream_sm@2x.png 2x
+                                        " type="image/png" />
             <img class="hero-image" src="./images/hero/icecream_sm.png" alt="icecream" width="171" height="410" />
         </picture>
-
+        <picture>
+            <source media="(min-width: 1200px)" srcset="
+                                                ./images/hero/girl_lg.png 1x,
+                                                ./images/hero/girl_lg@2x.png 2x
+                                                " type="image/png" />
+            <source media="(min-width: 768px)" srcset="
+                                                ./images/hero/girl_md.png 1x,
+                                                ./images/hero/girl_md@2x.png 2x
+                                                " type="image/png" />
+            <img class="image-tasty" src="./images/hero/girl_md.png" alt="girl it icecream" width="190" height="150" />
+        </picture>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="
+                                                ./images/hero/milk_lg.png 1x,
+                                                ./images/hero/milk_lg@2x.png 2x
+                                                " type="image/png" />
+            <source media="(min-width: 768px)" srcset="
+                                                ./images/hero/milk_md.png 1x,
+                                                ./images/hero/milk_md@2x.png 2x
+                                                " type="image/png" />
+            <img class="image-cup" src="./images/hero/milk_md.png" alt="cup of milk" width="152" height="154" />
+        </picture>
         <div class="elipce"></div>
+
+        <div class="position">
+            <h1 class="hero-title">
+                ice cream made with
+                <span class="hero-title__text">passion</span>
+            </h1>
+            <ul class="number-list">
+                <li class="number-list__item">16<span class="number-list__desc">cafes</span>
+                </li>
+                <li class="number-list__item">23<span class="number-list__desc">food trucks</span>
+                </li>
+            </ul>
+        </div>
+        <ul class="hero-list">
+            <li class="hero-list__item">
+                <a href="" class="link hero-btn hero-btn--dark">How it’s made?</a>
+            </li>
+            <li class="hero-list__item">
+                <a href="" class="link hero-btn hero-btn--white">How it’s made?</a>
+            </li>
+        </ul>
+        <p class="hero-indenture">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+        </p>
+        <svg class="hero-svg" width="18px" height="18px">
+            <use class="icon-pointer" href="./images/icon/icon-sprite.svg#icon-right-arrow">
+        </svg>
     </div>
 </section>
