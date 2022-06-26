@@ -6,7 +6,15 @@
     var(--white-color) 20%,
     var(--light-pink-color) 20%,
     var(--light-pink-color) 80%
+    
   );
+}
+.contacts__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
 
 .contacts-list {
@@ -88,7 +96,7 @@
 
 .contacts-list__text {
   margin-bottom: 8px;
-  width: 179px;
+  width: 190px;
 
   font-weight: 500;
   font-size: 12px;
@@ -180,7 +188,7 @@
 }
 
 .contacts-button__dark-icon {
-  color: var(--white-color);
+  fill: var(--white-color);
 }
 
 .contacts-button__white-btn {
@@ -209,5 +217,5 @@
 }
 
 .contacts-button__white-icon {
-  color: var(--red-pink-color);
+  fill: var(--red-pink-color);
 }
