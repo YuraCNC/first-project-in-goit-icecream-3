@@ -9,11 +9,12 @@
 
 .swiper__img {
   margin-bottom: 32px;
-  & img {
-    width: 85px;
-    height: 85px;
-    margin: 0 auto;
-  }
+}
+
+.swiper__image {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
 }
 
 .swiper__block {
@@ -70,10 +71,8 @@
 .swiper__list {
   display: flex;
   justify-content: center;
-  padding: 0;
 
   margin-bottom: 7px;
-  list-style: none;
 }
 
 .swiper__item::after {
@@ -86,7 +85,6 @@
 }
 
 .swiper__item {
-  list-style: none;
   & + .swiper__item {
     margin-left: 10px;
   }
