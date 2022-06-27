@@ -172,7 +172,7 @@
   line-height: 1.25;
   text-align: right;
   text-transform: lowercase;
-
+  letter-spacing: 0.04em;
   color: var(--white-color);
 }
 
@@ -196,8 +196,10 @@
   display: block;
   margin: 0 auto;
 
+  font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+
   align-items: center;
   text-align: center;
   border-radius: 20px;
