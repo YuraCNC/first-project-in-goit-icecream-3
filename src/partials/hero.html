@@ -1,21 +1,25 @@
 <!-- hero -->
 <section class="hero">
     <div class="container hero-position">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="
+        <div class="hero-burg">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="
                                         ./images/hero/icecream_lg.png 1x,
                                         ./images/hero/icecream_lg@2x.png 2x
                                         " type="image/png" />
-            <source media="(min-width: 768px)" srcset="
+                <source media="(min-width: 768px)" srcset="
                                          ./images/hero/icecream_md.png 1x,
                                         ./images/hero/icecream_md@2x.png 2x
                                         " type="image/png" />
-            <source media="(max-width: 767px)" srcset="
+                <source media="(max-width: 767px)" srcset="
                                         ./images/hero/icecream_sm.png 1x,
                                         ./images/hero/icecream_sm@2x.png 2x
                                         " type="image/png" />
-            <img class="hero-image" src="./images/hero/icecream_sm.png" alt="icecream" width="171" height="410" />
-        </picture>
+                <img class="hero-image" src="./images/hero/icecream_sm.png" alt="icecream" width="171" height="410" />
+            </picture>
+            <div class="image-elipce"></div>
+        </div>
+
         <picture>
             <source media="(min-width: 1200px)" srcset="
                                                 ./images/hero/girl_lg.png 1x,
@@ -38,17 +42,21 @@
                                                 " type="image/png" />
             <img class="image-cup" src="./images/hero/milk_md.png" alt="cup of milk" width="152" height="154" />
         </picture>
-        <div class="elipce"></div>
 
-        <div class="hero-position">
+
+        <div class="hero-box">
             <h1 class="hero-title">
                 ice cream made with
                 <span class="hero-title__text">passion</span>
             </h1>
             <ul class="number-list">
-                <li class="number-list__item">16<span class="number-list__desc">cafes</span>
+                <li class="number-list__item">
+                    <p class="number-list__achive">16</p>
+                    <p class="number-list__desc">cafes</p>
                 </li>
-                <li class="number-list__item">23<span class="number-list__desc">food trucks</span>
+                <li class="number-list__item">
+                    <p class="number-list__achive">23</p>
+                    <p class="number-list__desc">food trucks</p>
                 </li>
             </ul>
         </div>
@@ -64,7 +72,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
         </p>
-        <svg class="hero-svg" width="18px" height="18px">
+        <svg class="hero-svg" width="10px" height="18px">
             <use href="./images/icon/icon-sprite.svg#right-arrow-hero">
         </svg>
     </div>
