@@ -4,10 +4,18 @@
   background-color: var(--light-pink-color);
 }
 
+.avantages__container {
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+  }
+}
+
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    padding-right: 175px;
+    padding-right: 155px;
+
+    align-items: baseline;
   }
 }
 
@@ -20,7 +28,7 @@
     }
   }
   @media screen and (min-width: 768px) {
-    margin-right: 4px;
+    margin-right: 22px;
 
     &:last-child {
       margin-right: 0;

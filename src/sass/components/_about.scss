@@ -9,6 +9,12 @@
   }
 }
 
+.about__container {
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+  }
+}
+
 .about__label {
   margin-bottom: 15px;
 
@@ -107,7 +113,7 @@
     padding-right: 0px;
 
     font-size: 14px;
-    line-height: 1.78;
+    line-height: 1.76;
   }
 }
 
@@ -160,10 +166,6 @@
   // }
 }
 
-.about-btn__icon {
-  fill: var(--red-pink-color);
-}
-
 .about-btn__text {
   margin-right: 14px;
   padding: 5px 5px;
@@ -181,4 +183,8 @@
     font-size: 16px;
     line-height: 1.3;
   }
+}
+
+.about-btn__icon {
+  fill: var(--red-pink-color);
 }
