@@ -266,6 +266,13 @@
 
   cursor: pointer;
 
+  transition: background-color var(--anim-duration) var(--anim-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-grey-color);
+  }
+
   @include mq(tablet) {
     margin-right: 12px;
     width: 191px;
@@ -280,12 +287,10 @@
 
   background-color: var(--white-color);
 
-  transition: background-color var(--anim-duration) var(--anim-timing-function),
-    width (--anim-duration) var(--anim-timing-function);
+  transition: background-color var(--anim-duration) var(--anim-timing-function);
 
   &:hover,
   &:focus {
-    width: 180px;
     background-color: var(--secondary-grey-color);
   }
 
@@ -311,6 +316,13 @@
 
   color: var(--white-color);
 
+  transition: color var(--anim-duration) var(--anim-timing-function);
+
+  .contacts-button__btn:hover &,
+  .contacts-button__btn:focus & {
+    color: var(--red-pink-color);
+  }
+
   @include mq(tablet) {
     margin-right: 14px;
   }
@@ -324,8 +336,14 @@
 
 .contacts-button__dark-icon {
   fill: var(--white-color);
-}
 
+  transition: fill var(--anim-duration) var(--anim-timing-function);
+
+  .contacts-button__btn:hover &,
+  .contacts-button__btn:focus & {
+    fill: var(--red-pink-color);
+  }
+}
 .contacts-button__white-icon {
   fill: var(--red-pink-color);
 }
