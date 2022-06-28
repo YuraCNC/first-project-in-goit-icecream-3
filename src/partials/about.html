@@ -2,8 +2,14 @@
   <div class="container about__container">
     <p class="about__label">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
-    <div class="about__wrapper-for-tablet">
+    <div class="about__wrapper-not-mobile">
       <picture class="about__img-wrapper">
+        <source
+          media="(min-width: 1200px)"
+          width="501"
+          srcset="./images/about/cow_lg.png 1x, ./images/about/cow_lg@2x.png 2x"
+          type="image/png"
+        />
         <source
           media="(min-width: 768px)"
           width="336"
@@ -25,7 +31,7 @@
           loading="lazy"
         />
       </picture>
-      <div>
+      <div class="about__right-side-wrapper">
         <div class="about__text-wrapper">
           <p class="about__description">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
