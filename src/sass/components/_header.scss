@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
 
+
     @include mq(tablet) {
         padding-top: 32px;
         padding-left: 32px;
@@ -17,6 +18,9 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    z-index: 9;
+
 }
 
 .site-nav {
