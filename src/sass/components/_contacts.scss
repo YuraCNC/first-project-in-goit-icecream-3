@@ -19,16 +19,14 @@
   }
 
   @include mq(desktop) {
+    padding-bottom: 60px;
+
     background-image: linear-gradient(
       to bottom,
       var(--white-color) 14%,
       var(--light-pink-color) 14%,
       var(--light-pink-color) 86%
     );
-  }
-
-  @include mq(desktop) {
-    padding-bottom: 60px;
   }
 }
 
@@ -109,7 +107,7 @@
   }
 }
 
-.contacts-list__category--foodtruck {
+.contacts-list__category--green {
   width: 130px;
 
   background-color: var(--light-green-color);
@@ -141,7 +139,7 @@
 
   color: var(--black-color);
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     font-size: 14px;
   }
 
@@ -158,11 +156,8 @@
 
   color: var(--grey-color);
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     padding-right: 0;
-  }
-
-  @include mq(tablet-only) {
     font-size: 14px;
     line-height: 1.66;
   }
