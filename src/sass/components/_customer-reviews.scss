@@ -4,11 +4,11 @@
   @include mq(tablet) {
     padding-left: 74px;
     padding-right: 74px;
+    padding-bottom: 80px;
   }
 
   @include mq(desktop) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 120px 20px;
   }
 }
 .swiper {
