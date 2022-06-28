@@ -167,10 +167,7 @@
 
 .hero-title {
   font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
+  @include fonts(400, 26px, 1.16, 0.04em);
   text-transform: uppercase;
 
   color: var(--white-color);
@@ -185,10 +182,7 @@
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 0.97;
-    letter-spacing: 0.04em;
+    @include fonts(400, 48px, 0.97, 0.04em);
     text-transform: uppercase;
 
     color: var(--red-pink-color);
@@ -254,11 +248,7 @@
 
   &__achive {
     font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.04em;
+    @include fonts(400, 28px, 1.14, 0.04em);
     text-transform: uppercase;
 
     color: var(--red-pink-color);
@@ -270,11 +260,9 @@
   }
   &__desc {
     font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
+    @include fonts(400, 8px, 1.25, 0.04em);
     text-transform: lowercase;
-    letter-spacing: 0.04em;
+
     text-align: center;
 
     color: var(--white-color);
@@ -353,11 +341,7 @@
 .hero-btn {
   display: block;
   margin: 0 auto;
-
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-
+  @include fonts(400, 8px, 1.25, null);
   align-items: center;
   text-align: center;
   border-radius: 20px;
