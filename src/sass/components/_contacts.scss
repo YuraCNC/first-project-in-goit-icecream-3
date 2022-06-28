@@ -6,8 +6,29 @@
     var(--white-color) 20%,
     var(--light-pink-color) 20%,
     var(--light-pink-color) 80%
-    
   );
+
+  @include mq(tablet) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 40%,
+      var(--light-pink-color) 40%,
+      var(--light-pink-color) 60%
+    );
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 14%,
+      var(--light-pink-color) 14%,
+      var(--light-pink-color) 86%
+    );
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 60px;
+  }
 }
 .contacts__container {
   margin-left: auto;
@@ -15,10 +36,21 @@
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+
+  @include mq(tablet) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .contacts-list {
   display: block;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 .contacts-list__item {
@@ -31,7 +63,19 @@
   border-radius: 24px;
   background-color: var(--white-color);
 
-  &:last-child {
+  @include mq(tablet) {
+    max-height: 528px;
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    max-height: 538px;
+    padding: 40px;
+  }
+}
+
+.contacts-list__item:last-child {
+  @include mq(mobile-only) {
     margin-bottom: 0;
   }
 }
@@ -55,6 +99,12 @@
   color: var(--white-color);
   background-color: var(--cream-color);
   border-radius: 4px;
+
+  @include mq(tablet) {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 
 .contacts-list__category-foodtruck {
@@ -76,12 +126,23 @@
   color: var(--white-color);
   background-color: var(--light-green-color);
   border-radius: 4px;
+
+  @include mq(tablet) {
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 
 .contacts-list__city {
   padding-top: 20px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--light-grey-color);
+
+  @include mq(tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-list-title {
@@ -92,20 +153,36 @@
   letter-spacing: 0.04em;
 
   color: var(--black-color);
+
+  @include mq(tablet-only) {
+      font-size: 14px;
+    }
+  
+    @include mq(desktop) {
+      font-size: 16px;
+    }
 }
 
 .contacts-list__text {
-  margin-bottom: 8px;
-  width: 190px;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+  padding-right: 20px;
 
   color: var(--grey-color);
 
-  &:last-child {
-    margin-bottom: 0;
+  @include mq(tablet-only) {
+    padding-right: 0;
+  }
+
+  @include mq(tablet-only) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.83;
   }
 }
 
@@ -113,14 +190,34 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--light-grey-color);
+
+  @include mq(tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-list__time-text {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
 
   color: var(--pink-color);
+
+  @include mq(tablet) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-list__contacts {
@@ -128,13 +225,9 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 24px;
-}
 
-.contacts-list__contacts-item {
-  margin-bottom: 8px;
-
-  &:last-child {
-    margin-bottom: 0;
+  @include mq(tablet) {
+    margin-top: 32px;
   }
 }
 
@@ -146,6 +239,15 @@
   color: var(--grey-color);
 
   transition: color var(--anim-duration) var(--anim-timing-function);
+
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
 
   &:hover,
   &:focus {
@@ -159,6 +261,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+
+  @include mq(tablet) {
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contacts-button__dark-btn {
@@ -172,6 +281,16 @@
   border-radius: 22px;
   width: 161px;
   height: 44px;
+cursor: pointer;
+
+
+  @include mq(tablet) {
+    margin-right: 12px;
+    width: 191px;
+  }
+  @include mq(desktop) {
+    width: 198px;
+  }
 }
 
 .contacts-button__dark-text {
@@ -183,6 +302,10 @@
   display: flex;
   align-items: center;
   text-align: center;
+
+  @include mq(tablet) {
+    margin-right: 14px;
+  }
 
   color: var(--white-color);
 }
@@ -202,6 +325,23 @@
   border-radius: 22px;
   width: 161px;
   height: 44px;
+cursor: pointer;
+transition: background-color var(--anim-duration) var(--anim-timing-function), width (--anim-duration) var(--anim-timing-function);
+
+&:hover,
+  &:focus {
+      width: 180px;
+      background-color: var(--secondary-grey-color);
+  }
+
+  @include mq(tablet) {
+    margin-top: 0;
+    width: 174px;
+  }
+
+  @include mq(desktop) {
+    width: 168px;
+  }
 }
 
 .contacts-button__white-text {
