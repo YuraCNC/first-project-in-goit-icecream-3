@@ -32,6 +32,17 @@
         transform: translateX(0);
       
     }
+
+    @include mq(tablet) {
+        width: 254px;
+        padding-top: 58px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    @include mq(desktop) {
+        display: none;
+    }
 }
 
 .mobile-menu__close-btn {
@@ -59,7 +70,7 @@
     margin: 0;
     padding: 0;
 
-    background: var(--white-color);
+    background-color: var(--white-color);
     border: none;
     border-radius: 22px;
 
@@ -70,6 +81,14 @@
     margin-left: auto;
     margin-right: auto;
 
+    fill: var(--red-pink-color);
+
+    transition: background-color var(--transition);
+}
+
+.mobile-menu__buy-btn:hover,
+.mobile-menu__buy-btn:focus {
+    background-color: var(--secondary-grey-color);
 }
 
 .mobile-menu__btn-text {
