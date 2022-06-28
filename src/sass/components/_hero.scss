@@ -197,13 +197,13 @@
   }
   @media screen and(min-width: 768px) {
     position: absolute;
-    right: 40px;
+    right: 32px;
     top: 92px;
     display: block;
   }
   @media screen and(min-width: 1200px) {
     position: absolute;
-    right: 34px;
+    right: 20px;
     top: 152px;
   }
 }
@@ -229,31 +229,52 @@
   @media screen and(min-width: 1200px) {
     width: 30px;
     height: 30px;
-    right: -6px;
+    right: -1px;
     top: -7px;
   }
 }
 .number-list__item:hover.number-list__item::before {
   animation: transition 3s infinite;
 }
-
-@keyframes transition {
-  0% {
-    transform: translateY(1px);
+@media screen and(min-width: 768px) {
+  @keyframes transition {
+    0% {
+      transform: translateY(1px);
+    }
+    25% {
+      transform: translateY(19px);
+    }
+    50% {
+      transform: translateX(-32px) translateY(19px);
+    }
+    75% {
+      transform: translateX(-32px) translateY(1px);
+    }
+    100% {
+      transform: translateX(0px) translateY(-1px);
+    }
   }
-  25% {
-    transform: translateY(19px);
-  }
-  50% {
-    transform: translateX(-32px) translateY(19px);
-  }
-  75% {
-    transform: translateX(-32px) translateY(1px);
-  }
-  100% {
-    transform: translateX(0px) translateY(-1px);
+  @media screen and(min-width: 1200px) {
+    @keyframes transition {
+      0% {
+        transform: translateY(-1px);
+      }
+      25% {
+        transform: translateY(32px);
+      }
+      50% {
+        transform: translateX(-52px) translateY(32px);
+      }
+      75% {
+        transform: translateX(-52px) translateY(1px);
+      }
+      100% {
+        transform: translateX(0px) translateY(-1px);
+      }
+    }
   }
 }
+
 .number-list__achive {
   font-family: var(--secondary-font);
   font-weight: 400;
@@ -280,11 +301,12 @@
   text-align: right;
   text-transform: lowercase;
   letter-spacing: 0.04em;
+  text-align: center;
+
   color: var(--white-color);
   @media screen and(min-width: 1200px) {
     font-size: 14px;
     line-height: 1.28;
-    text-align: center;
   }
 }
 
@@ -382,8 +404,7 @@
   @media screen and(min-width: 1200px) {
     font-size: 14px;
     line-height: 1.4;
-    max-width: 200px;
-
+    max-width: 220px;
     margin-bottom: 20px;
     margin-left: 229px;
   }
@@ -414,7 +435,7 @@
   }
   @media screen and(min-width: 1200px) {
     margin-left: 229px;
-    margin-bottom: 84px;
+    margin-bottom: 78px;
     width: 26px;
     height: 26px;
   }
