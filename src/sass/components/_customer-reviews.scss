@@ -1,4 +1,6 @@
-.section {
+.container-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
   @include mq(tablet) {
     padding-left: 74px;
     padding-right: 74px;
@@ -81,21 +83,21 @@
     height: 40px;
     font-size: 50px;
     display: inline-block;
-    background-image: url(..//images/icon/svg/elem.svg);
+    background-image: url(../images/icon/svg/elem.svg);
     position: absolute;
     top: -12px;
     left: -14px;
     z-index: -1;
 
     @include mq(tablet) {
-      background-image: url(..//images/icon/svg/elem-tablet.svg);
+      background-image: url(../images/icon/svg/elem-tablet.svg);
       width: 60px;
       top: -15px;
       left: 34px;
     }
 
     @include mq(desktop) {
-      background-image: url(..//images/icon/svg/elem.svg);
+      background-image: url(../images/icon/svg/elem.svg);
       width: 54px;
       top: -15px;
       left: -3px;
@@ -177,6 +179,11 @@
     font-size: 16px;
     margin-bottom: 32px;
   }
+
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.85;
+  }
 }
 
 .swiper-slide {
@@ -195,7 +202,7 @@
 }
 
 .swiper .swiper-pagination-bullet-active {
-  background-image: url(/src/images/icon/svg/home.svg);
+  background-image: url(../images/icon/svg/home.svg);
   background-color: transparent;
   border-radius: 0;
   background-size: cover;
