@@ -11,29 +11,33 @@
 }
 
 .advantages__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    padding-right: 155px;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   padding-right: 155px;
 
-    align-items: baseline;
-  }
+  //   align-items: baseline;
+  // }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
 }
 
 .advantages__item {
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: 32px;
+  flex-basis: calc((100% - 66px) / 3);
+  // @media screen and (max-width: 767.98px) {
+  //   margin-bottom: 32px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 22px;
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+  // }
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 22px;
 
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
 }
 
 .advantages__amount {
