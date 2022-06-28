@@ -1,5 +1,17 @@
 <section class="section gallery-section">
-    <picture>
+    <picture class="gallery__img-mob">
+        <source 
+            srcset="
+                ./images/galery/galery_lg.png 1x,
+                ./images/galery/galery_lg@2x.png 2x" 
+                media="(min-width: 1200px)" 
+        />
+        <source 
+            srcset="
+                ./images/galery/galery_md.png 1x,
+                ./images/galery/galery_md@2x.png 2x" 
+                media="(min-width: 768px)" 
+        />
         <source 
             srcset="
                 ./images/galery/galery_sm.png 1x,
@@ -8,7 +20,9 @@
         />
         
         <img src="./images/galery/galery_sm.png" 
-        width="320" 
-        alt="Ice-cream" />
+        width="100%" 
+        alt="Ice-cream" 
+        loading="lazy"/>
     </picture>
+    
 </section>
