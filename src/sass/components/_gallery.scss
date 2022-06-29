@@ -7,9 +7,7 @@
     background-image: linear-gradient(to bottom, var(--light-pink-color), 
     var(--light-pink-color) 19%, var(--white-color) 20%);
 
-    @include mq(tablet) {
-        // min-width: 768px;
-    }
+    
 
     
 }
@@ -21,7 +19,7 @@
     @include mq(desktop) {
         padding-left: 93px;
         padding-right: 94px;
-        // max-width: 1200px;
+        
         
     }
 }
@@ -34,7 +32,7 @@
 
 .gallery__list {
     display: none;
-    // align-items: center;
+    
     justify-content: space-between;
 
     @include mq(tablet) {
@@ -42,9 +40,7 @@
 
     }
 
-    @include mq(desktop) {
-
-    }
+    
 }
 
 .gallery__item-1 {
