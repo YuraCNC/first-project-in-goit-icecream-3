@@ -25,6 +25,10 @@
   flex-wrap: wrap;
   gap: 22px;
   align-items: center;
+
+  @media screen and (max-width: 400px) {
+    gap: 32px;
+  }
 }
 
 .advantages__item {
@@ -40,6 +44,7 @@
 
 .advantages__amount {
   margin-bottom: 20px;
+  display: block;
 
   font-family: var(--secondary-font);
   font-weight: 400;
