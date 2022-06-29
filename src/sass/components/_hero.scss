@@ -1,11 +1,17 @@
 .hero {
   background-color: var(--secondary-pink-color);
+
   position: relative;
   z-index: 3;
+
   overflow: hidden;
 }
 
 .hero-position {
+  padding-top: 194px;
+  padding-bottom: 153px;
+  position: relative;
+  z-index: 3;
   @media screen and(min-width: 768px) {
     padding: 0 32px;
   }
