@@ -317,15 +317,15 @@
   &__description {
     @include mq(mobile) {
       max-width: 280px;
-      max-height: 124px;
+      min-height: 124px;
     }
     @include mq(tablet) {
       max-width: 224px;
-      max-height: 150px;
+      min-height: 150px;
     }
     @include mq(desktop) {
       max-width: 368px;
-      max-height: 106px;
+      min-height: 106px;
     }
   }
   &__text {
@@ -345,10 +345,10 @@
       font-size: 16px;
       line-height: 1.75;
     }
-    &__span {
-      @include mq(tablet) {
-        display: none;
-      }
+  }
+  &__span {
+    @include mq(tablet) {
+      display: none;
     }
   }
   &-button {
