@@ -317,7 +317,7 @@
   &__description {
     @include mq(mobile) {
       max-width: 280px;
-      max-height: 124px;
+      min-height: 124px;
     }
     @include mq(tablet) {
       max-width: 224px;
