@@ -1,18 +1,9 @@
-.products .container {
-  @include mq(tablet) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @include mq(desktop) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 .products {
   &__label {
     font-family: var(--secondary-font);
     font-size: 18px;
     line-height: 1.6;
+    margin-bottom: 15px;
 
     text-transform: uppercase;
     text-align: center;
@@ -22,15 +13,16 @@
     @include mq(tablet) {
       font-size: 26px;
       line-height: 1.15;
+      margin-bottom: 18px;
     }
     @include mq(desktop) {
       font-size: 30px;
       line-height: 1.13;
+      margin-bottom: 16px;
     }
   }
   &__title {
     margin-bottom: 8px;
-    margin-top: 15px;
 
     font-family: var(--secondary-font);
     font-size: 34px;
@@ -43,6 +35,8 @@
     color: var(--red-pink-color);
 
     @include mq(tablet) {
+      margin-bottom: 20px;
+
       font-size: 48px;
       line-height: 1.15;
     }
@@ -75,11 +69,16 @@
     position: relative;
 
     margin-top: 140px;
+    padding-top: 140px;
+    padding-left: 41px;
+    padding-right: 39px;
+    padding-bottom: 40px;
 
     border-radius: 24px;
 
     &:nth-child(1) {
       background-color: var(--secondary-pink-color);
+
       &::before {
         content: '';
         position: absolute;
@@ -243,12 +242,20 @@
 
     @include mq(tablet) {
       margin-top: 158px;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 87px;
     }
     @include mq(desktop) {
       margin-top: 281px;
+      padding-left: 61px;
+      padding-right: 62px;
+      padding-top: 128px;
+      padding-bottom: 60px;
     }
   }
 }
+
 .products-block {
   &__picture {
     position: absolute;
@@ -258,22 +265,6 @@
     }
     @include mq(desktop) {
       bottom: 402px;
-    }
-  }
-  &__content {
-    padding-top: 140px;
-    padding-left: 41px;
-    padding-right: 39px;
-
-    @include mq(tablet) {
-      padding-left: 32px;
-      padding-right: 32px;
-      padding-top: 87px;
-    }
-    @include mq(desktop) {
-      padding-left: 61px;
-      padding-right: 62px;
-      padding-top: 128px;
     }
   }
 }
@@ -360,7 +351,9 @@
     width: 40px;
     height: 40px;
 
-    margin: 32px auto 40px;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
 
     border: none;
     border-radius: 50%;
@@ -369,7 +362,7 @@
 
     transition: transform 750ms var(--anim-timing-function);
     @include mq(desktop) {
-      margin: 60px auto;
+      margin: 60px auto 0;
     }
   }
 }
