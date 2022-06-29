@@ -252,7 +252,7 @@
     font-family: var(--secondary-font);
     @include fonts(400, 28px, 1.14, 0.04em);
     text-transform: uppercase;
-
+    text-align: right;
     color: var(--red-pink-color);
 
     @media screen and(min-width: 1200px) {
@@ -264,8 +264,7 @@
     font-family: var(--main-font);
     @include fonts(400, 8px, 1.25, 0.04em);
     text-transform: lowercase;
-
-    text-align: center;
+    text-align: right;
 
     color: var(--white-color);
 
