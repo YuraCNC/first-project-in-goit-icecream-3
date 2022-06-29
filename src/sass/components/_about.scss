@@ -124,6 +124,7 @@
   @media screen and (max-width: 767.98px) {
     margin-bottom: 20px;
     position: relative;
+    z-index: 0;
 
     // background-image: url('../images/about/wave-milk_sm.png');
     // background-repeat: no-repeat;
@@ -147,7 +148,10 @@
     position: absolute;
     width: 100%;
     top: 70px;
-    z-index: 1;
+    z-index: -1;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -206,6 +210,10 @@
 }
 
 .about-btn {
+  position: relative;
+
+  z-index: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
