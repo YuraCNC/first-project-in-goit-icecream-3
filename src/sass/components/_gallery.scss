@@ -25,9 +25,14 @@
 }
 
 .gallery__img-mob {
+    
+    
    @include mq(tablet) {
         display: none;
     } 
+}
+.mob__img {
+    width: 100%;
 }
 
 .gallery__list {
