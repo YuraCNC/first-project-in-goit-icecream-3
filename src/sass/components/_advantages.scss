@@ -24,6 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
+  align-items: center;
 }
 
 .advantages__item {
@@ -31,6 +32,9 @@
 
   @media screen and (max-width: 400px) {
     min-width: 170px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-basis: calc((100% - 225px) / 3);
   }
 }
 
