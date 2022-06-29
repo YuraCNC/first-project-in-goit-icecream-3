@@ -1,19 +1,21 @@
 <section class="section gallery-section">
     <div class="container gallery__container">
         <h2 class="visually-hidden">Gallery IceCrem Page</h2>
-        <picture class="gallery__img-mob">
-            <source srcset="
-                        ./images/galery/galery_lg.png 1x,
-                        ./images/galery/galery_lg@2x.png 2x" media="(min-width: 1200px)" type="image/png" />
-            <source srcset="
-                        ./images/galery/galery_md.png 1x,
-                        ./images/galery/galery_md@2x.png 2x" media="(min-width: 768px)" type="image/png" />
-            <source srcset="
-                        ./images/galery/galery_sm.png 1x,
-                        ./images/galery/galery_sm@2x.png 2x" media="(max-width: 767px)" type="image/png" />
-        
-            <img src="./images/galery/galery_sm.png"  alt="Ice-cream" loading="lazy" />
-        </picture>
+        <div class="gallery__img-mob">
+            <picture>
+                <source srcset="
+                                    ./images/galery/galery_lg.png 1x,
+                                    ./images/galery/galery_lg@2x.png 2x" media="(min-width: 1200px)" type="image/png" />
+                <source srcset="
+                                    ./images/galery/galery_md.png 1x,
+                                    ./images/galery/galery_md@2x.png 2x" media="(min-width: 768px)" type="image/png" />
+                <source srcset="
+                                    ./images/galery/galery_sm.png 1x,
+                                    ./images/galery/galery_sm@2x.png 2x" media="(max-width: 767px)" type="image/png" />
+            
+                <img src="./images/galery/galery_sm.png" class="mob__img" alt="Ice-cream" loading="lazy" />
+            </picture>
+        </div>
         <ul class="gallery__list">
             <li class="gallery__item gallery__item-1">
                 <div class="gallery__img">
