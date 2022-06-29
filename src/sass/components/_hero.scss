@@ -248,6 +248,7 @@
   }
 
   &__achive {
+    display: block;
     font-family: var(--secondary-font);
     @include fonts(400, 28px, 1.14, 0.04em);
     text-transform: uppercase;
