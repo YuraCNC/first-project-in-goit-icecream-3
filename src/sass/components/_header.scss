@@ -1,10 +1,12 @@
 .container-header {
-    background-color: rgba( 255, 184, 202, 0.4);
+    background-color: transparent;
 
     padding-top: 8px;
 
-    position: fixed;
+    position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
 
     @include mq(tablet) {
