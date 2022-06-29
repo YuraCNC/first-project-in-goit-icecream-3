@@ -56,9 +56,11 @@
   &-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     @include mq(tablet) {
       flex-direction: row;
+
       gap: 16px;
     }
     @include mq(desktop) {
@@ -156,6 +158,20 @@
     @include mq(desktop) {
       font-size: 30px;
       line-height: 1.13;
+    }
+  }
+  &__description {
+    @include mq(mobile) {
+      max-width: 280px;
+      max-height: 124px;
+    }
+    @include mq(tablet) {
+      max-width: 224px;
+      max-height: 150px;
+    }
+    @include mq(desktop) {
+      max-width: 368px;
+      max-height: 106px;
     }
   }
   &__text {
