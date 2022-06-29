@@ -88,6 +88,8 @@
         background-position: center;
         background-repeat: no-repeat;
 
+        transition: transform 750ms var(--anim-timing-function);
+
         @include mq(mobile) {
           width: 280px;
           height: 280px;
@@ -138,6 +140,8 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+
+        transition: transform 750ms var(--anim-timing-function);
 
         @include mq(mobile) {
           width: 280px;
@@ -192,6 +196,7 @@
         background-position: center;
         background-repeat: no-repeat;
 
+        transition: transform 750ms var(--anim-timing-function);
         @include mq(mobile) {
           width: 280px;
           height: 280px;
@@ -247,6 +252,7 @@
 .products-block {
   &__picture {
     position: absolute;
+
     @include mq(not-desktop) {
       top: -140px;
     }
@@ -361,7 +367,7 @@
 
     background-color: var(--white-color);
 
-    transition: transform 1s ease;
+    transition: transform 750ms var(--anim-timing-function);
     @include mq(desktop) {
       margin: 60px auto;
     }
@@ -392,11 +398,11 @@
   transform: rotate(180deg);
 }
 
-.flipcard .back {
+.back {
   transform: rotateY(-180deg);
 }
-.flipcard .front,
-.flipcard .back {
+.front,
+.back {
   position: absolute;
 
   width: 100%;
@@ -413,18 +419,13 @@
   transition: transform var(--transition);
 }
 .products-button:hover.front,
-.flipcard.flip .front {
+.front {
   transform: rotateY(180deg);
 }
 .products-button:hover.back,
-.flipcard.flip .back {
+.back {
   transform: rotateY(0deg);
 }
-.flipcard {
-  position: relative;
-
-  width: 220px;
-  height: 160px;
-
-  perspective: 500px;
+.rotate-picture.products-block::before {
+  transform: rotateY(-180deg);
 }
