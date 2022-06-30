@@ -9,38 +9,35 @@
 
       <ul class="site-nav__list">
         <li class="site-nav__item">
-          <a class="site-nav__link current" href="/src/index.html">Home</a>
+          <a class="site-nav__link link current" href="/src/index.html">Home</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#about">About us</a>
+          <a class="site-nav__link link" href="#about">About us</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#advantages">How it’s made?</a>
+          <a class="site-nav__link link" href="#advantages">How it’s made?</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#products">Our products</a>
+          <a class="site-nav__link link" href="#products">Our products</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#contacts">Contact</a>
+          <a class="site-nav__link link" href="#contacts">Contact</a>
         </li>
       </ul>
-
-      <div class="header__btn-group">
-        <button type="button" class="site-nav__btn js-open-menu">
-          <svg width="20" height="12">
-            <use
-              href="./images/icon/icon-sprite.svg#icon-mobile-menu-open"
-            ></use>
-          </svg>
-        </button>
-        <button type="button" class="header_buy-btn" data-modal-open>
-          <span class="mobile-menu__btn-text">Buy now</span>
-          <svg width="8" height="10">
-            <use href="./images/icon/icon-sprite.svg#icon-right-arrow"></use>
-          </svg>
-        </button>
-      </div>
     </nav>
+    <div class="header__btn-group">
+      <button type="button" class="site-nav__btn js-open-menu">
+        <svg width="20" height="12">
+          <use href="./images/icon/icon-sprite.svg#icon-mobile-menu-open"></use>
+        </svg>
+      </button>
+      <button type="button" class="header_buy-btn" data-modal-open>
+        <span class="mobile-menu__btn-text">Buy now</span>
+        <svg width="8" height="10">
+          <use href="./images/icon/icon-sprite.svg#icon-right-arrow"></use>
+        </svg>
+      </button>
+    </div>
   </div>
   <div class="mobile-menu container js-menu-container">
     <button
@@ -60,19 +57,21 @@
     </button>
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link current" href="/src/index.html">Home</a>
+        <a class="mobile-menu__link link current" href="/src/index.html"
+          >Home</a
+        >
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#about">About us</a>
+        <a class="mobile-menu__link link" href="#about">About us</a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#advantages">How it’s made?</a>
+        <a class="mobile-menu__link link" href="#advantages">How it’s made?</a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#products">Our products</a>
+        <a class="mobile-menu__link link" href="#products">Our products</a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#contacts">Contact</a>
+        <a class="mobile-menu__link link" href="#contacts">Contact</a>
       </li>
     </ul>
   </div>
@@ -89,30 +88,38 @@
         <b class="form-title">Leave your details, we will call you back</b>
         <label class="form-item">
           <span class="label-name">Name</span>
-          <input type="text" name="user-name" class="input">
+          <input type="text" name="user-name" class="input" />
           <svg class="form-icon" width="18" height="18">
             <use href="/src/images/icon/icon-sprite.svg#icon-person-form"></use>
           </svg>
         </label>
         <label class="form-item">
           <span class="label-name">Phone namber</span>
-          <input type="tel" name="user-phone" class="input">
+          <input type="tel" name="user-phone" class="input" />
           <svg class="form-icon" width="18" height="18">
             <use href="/src/images/icon/icon-sprite.svg#icon-phone-form"></use>
           </svg>
         </label>
         <label class="form-item">
           <span class="label-name">E-mail</span>
-          <input type="email" name="user-mail" class="input">
+          <input type="email" name="user-mail" class="input" />
           <svg class="form-icon" width="18" height="18">
             <use href="/src/images/icon/icon-sprite.svg#icon-email-form"></use>
           </svg>
         </label>
         <label class="form-item coment">
-          <span class="label-name">Please indicate which product you would like to order</span>
-          <textarea name="coments" placeholder="Enter text" cols="10" rows="7" class="text-area"></textarea>
+          <span class="label-name"
+            >Please indicate which product you would like to order</span
+          >
+          <textarea
+            name="coments"
+            placeholder="Enter text"
+            cols="10"
+            rows="7"
+            class="text-area"
+          ></textarea>
         </label>
-  
+
         <!-- <label class="form-item policy-list">
           <input type="checkbox" name="policy" class="checkbox visually-hidden">
           <span class="custom-checkbox">
@@ -125,8 +132,7 @@
             <a href="" class="treaty">Terms of an agreement</a>
           </span>
         </label> -->
-  
-  
+
         <button type="submit" class="btn-buy-submit">Buy</button>
       </form>
     </div>
