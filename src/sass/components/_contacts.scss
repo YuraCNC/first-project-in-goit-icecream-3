@@ -270,7 +270,8 @@
   @include mq(tablet) {
     margin-bottom: 0;
     margin-right: 14px;
-  }
+
+    }
 
   @include mq(desktop) {
     margin-right: 12px;
@@ -278,6 +279,7 @@
 
   &:last-child {
     margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
