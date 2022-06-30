@@ -2,25 +2,31 @@
   padding-top: 0;
   padding-bottom: 20px;
 
-  background-image: linear-gradient(to bottom,
-      var(--white-color) 20%,
-      var(--light-pink-color) 20%,
-      var(--light-pink-color) 80%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color) 20%,
+    var(--light-pink-color) 20%,
+    var(--light-pink-color) 80%
+  );
 
   @include mq(tablet) {
-    background-image: linear-gradient(to bottom,
-        var(--white-color) 40%,
-        var(--light-pink-color) 40%,
-        var(--light-pink-color) 60%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 40%,
+      var(--light-pink-color) 40%,
+      var(--light-pink-color) 60%
+    );
   }
 
   @include mq(desktop) {
     padding-bottom: 60px;
 
-    background-image: linear-gradient(to bottom,
-        var(--white-color) 14%,
-        var(--light-pink-color) 14%,
-        var(--light-pink-color) 86%);
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 14%,
+      var(--light-pink-color) 14%,
+      var(--light-pink-color) 86%
+    );
   }
 }
 
@@ -43,7 +49,6 @@
 
 .contacts-list__item {
   width: 100%;
-  // max-height: 412px;
   padding: 40px 32px;
   margin-bottom: 20px;
 
@@ -52,12 +57,10 @@
   background-color: var(--white-color);
 
   @include mq(tablet) {
-    // max-height: 528px;
     margin-bottom: 0;
   }
 
   @include mq(desktop) {
-    // max-height: 538px;
     padding: 40px;
   }
 }
