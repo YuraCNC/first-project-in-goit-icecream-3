@@ -3,8 +3,6 @@
   padding-bottom: 60px;
 
   @include mq(tablet) {
-    padding-left: 74px;
-    padding-right: 74px;
     padding-bottom: 80px;
   }
 
@@ -12,6 +10,19 @@
     padding: 120px 20px;
   }
 }
+
+.container-main {
+  @include mq(tablet) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @include mq(desktop) {
+    padding-left: 116px;
+    padding-right: 116px;
+  }
+}
+
 .swiper {
   padding-top: 43px;
   padding-bottom: 43px;
@@ -51,7 +62,7 @@
 
   margin: 0 auto;
   margin-bottom: 36px;
-  max-width: 480px;
+
   height: 100%;
   background-color: var(--secondary-white-color);
   &::after {
@@ -75,7 +86,6 @@
     }
   }
   @include mq(tablet) {
-    max-width: 620px;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 36px;
@@ -84,7 +94,6 @@
   }
 
   @include mq(desktop) {
-    max-width: 968px;
     padding-left: 74px;
     padding-right: 74px;
     margin-bottom: 36px;
