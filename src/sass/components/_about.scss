@@ -9,31 +9,37 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/about/wave-milk_lg.png');
+    background-image: url('../images/about/wave-milk_lg_l.png'),
+      url('../images/about/wave-milk_lg_r.png');
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position-y: 236px;
+    background-position-x: left, right;
+    background-size: 50%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/about/wave-milk_lg@2x.png');
+      background-image: url('../images/about/wave-milk_lg@2x_l.png'),
+        url('../images/about/wave-milk_lg@2x_r.png');
     }
   }
 }
 
 .about__container {
   @media screen and (max-width: 767.98px) {
-    background-image: url('../images/about/wave-milk_sm.png');
+    background-image: url('../images/about/wave-milk_sm_l.png'),
+      url('../images/about/wave-milk_sm_r.png');
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position-y: 534px;
+    background-position-x: left, right;
     background-origin: content-box;
+    background-size: 50%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/about/wave-milk_sm@2x.png');
+      background-image: url('../images/about/wave-milk_sm@2x_l.png'),
+        url('../images/about/wave-milk_sm@2x_r.png');
     }
   }
 
