@@ -68,11 +68,11 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-
+    fill: var(--secondary-pink-color);
     transition: fill var(--transition);
 
     &:hover {
-        fill: var(--accent-color);
+        fill: var(--red-pink-color);
     }
 }
 
@@ -126,7 +126,7 @@
     transition: border var(--transition);
 
     &:focus {
-        border-color: var(--accent-color);
+        border-color: var(--secondary-pink-color);
     }
 }
 
@@ -147,12 +147,12 @@
     bottom: 11px;
     left: 12px;
 
-    fill: var(--title-text-color);
+    fill: var(--secondary-light-grey-color);
 
     transition: fill var(--transition);
 
     .input:focus+& {
-        fill: var(--accent-color)
+        fill: var(--red-pink-color)
     }
 }
 
@@ -181,7 +181,7 @@
 
 
     &:focus {
-        border-color: var(--accent-color);
+        border-color: var(--secondary-pink-color);
     }
 }
 
