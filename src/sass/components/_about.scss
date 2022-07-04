@@ -13,16 +13,16 @@
     background-image: url('../images/about/wave-milk_sm_l.png'),
       url('../images/about/wave-milk_sm_r.png');
     background-repeat: no-repeat;
-    background-position-y: 500px;
+    background-position-y: 545px;
     background-position-x: left, right;
     background-origin: content-box;
-    background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/about/wave-milk_sm@2x_l.png'),
         url('../images/about/wave-milk_sm@2x_r.png');
+      background-size: 140px 133px;
     }
   }
 
@@ -34,15 +34,15 @@
     background-image: url('../images/about/wave-milk_lg_l.png'),
       url('../images/about/wave-milk_lg_r.png');
     background-repeat: no-repeat;
-    background-position-y: 170px;
+    background-position-y: 236px;
     background-position-x: left, right;
-    background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/about/wave-milk_lg@2x_l.png'),
         url('../images/about/wave-milk_lg@2x_r.png');
+      background-size: 600px 521px;
     }
   }
 }
